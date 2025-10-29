@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoodWebTV - Streaming Film dan Series Gratis</title>
+    <meta name="description" content="Nonton film dan series terbaru gratis dengan kualitas HD tanpa iklan">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="assets/images/logo.png" alt="DoodWebTV" class="logo">
+                <span class="brand-name">DoodWebTV</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Beranda</a>
+                <a href="#movies" class="nav-link">Film</a>
+                <a href="#series" class="nav-link">Series</a>
+                <a href="#trending" class="nav-link">Trending</a>
+            </div>
+            
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="Cari film atau series...">
+                <button id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Nonton Film & Series Gratis</h1>
+            <p class="hero-subtitle">Streaming tanpa batas dengan kualitas HD. Tanpa iklan, tanpa ribet.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Mulai Menonton</button>
+                <button class="btn btn-secondary">Jelajahi Koleksi</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Movies -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Film Terpopuler</h2>
+            <div class="movies-grid" id="featuredMovies">
+                <!-- Movies will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Series Section -->
+    <section id="series" class="series-section">
+        <div class="container">
+            <h2 class="section-title">Series Terbaru</h2>
+            <div class="series-grid" id="seriesGrid">
+                <!-- Series will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Player Modal -->
+    <div id="playerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="video-container">
+                <video id="videoPlayer" controls>
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-info">
+                    <h3 id="videoTitle"></h3>
+                    <p id="videoDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DoodWebTV</h3>
+                    <p>Platform streaming film dan series gratis dengan kualitas terbaik.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="#action">Action</a></li>
+                        <li><a href="#comedy">Comedy</a></li>
+                        <li><a href="#drama">Drama</a></li>
+                        <li><a href="#horror">Horror</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#dmca">DMCA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DoodWebTV. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
